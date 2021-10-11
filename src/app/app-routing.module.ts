@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     component: PorPaisComponent,
-    pathMatch: 'full'
+    pathMatch: 'full' //para que solo se muestre esta si coincide exactamente con el path
   },
   {
     path: 'region',

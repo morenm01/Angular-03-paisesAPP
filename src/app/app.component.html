@@ -6,9 +6,26 @@
     <h2>Búsquedas</h2>
     <hr>
     <ul class="list-group">
-      <li class="list-group-item">Buscar por país</li>
-      <li class="list-group-item">Por región</li>
-      <li class="list-group-item">Por capital</li>
+      <!--[routerLinkActiveOptions]= "{exact: true}" con esta linea indicamos que solo se ponga activa si la ruta coindice
+      exactamente con el path definido en routerModule-->
+      <li routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true}"
+          class="list-group-item">
+          Buscar por país
+
+      </li>
+      <li routerLink="region"
+          routerLinkActive="active"
+          class="list-group-item">
+          Por región
+
+      </li>
+      <li routerLink="capital"
+          routerLinkActive="active"
+          class="list-group-item">
+          Por capital
+      </li>
     </ul>
   </div>
 
